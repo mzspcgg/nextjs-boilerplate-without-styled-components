@@ -1,6 +1,6 @@
 {
   "name": "space-cartels-game",
-  "version": "1.22.19",
+  "version": "1.22.17",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
@@ -13,8 +13,8 @@
     "build-storybook": "build-storybook"
   },
   "engines": {
-    "node": ">=16.16.0",
-    "yarn": ">=1.22.19",
+    "node": ">=16.15.0",
+    "yarn": ">=1.22.17",
     "npm": "please-use-yarn"
   },
   "resolutions": {

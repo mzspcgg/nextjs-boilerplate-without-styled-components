@@ -1,6 +1,6 @@
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import SidebarLayout from '../components/layouts/sidebar/SidebarLayout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/pages/Home.module.scss';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {

@@ -1,0 +1,7 @@
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($font-size-px) {
+  @return #{stripUnit($font-size-px) / stripUnit($font-size-default)}rem;
+}

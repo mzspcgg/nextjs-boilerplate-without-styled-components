@@ -1,0 +1,21 @@
+@import 'normalize.scss/normalize.scss';
+@import './main.module.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: $font-default;
+  font-size: $font-size-default;
+  font-weight: font-weight(medium);
+  color: $color-default;
+  line-height: $line-height-default;
+}
+
+html,
+body,
+#__next {
+  min-height: 100vh;
+}
+
+body {
+  background: $color-bg;
+}

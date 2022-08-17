@@ -1,0 +1,15 @@
+@mixin text-7 {
+  font-size: font-size(xxxs);
+
+  @include desktop {
+    font-size: font-size-desktop(xxxs);
+  }
+}
+
+@mixin text-10 {
+  font-size: font-size(xxs);
+
+  @include desktop {
+    font-size: font-size-desktop(xxs);
+  }
+}

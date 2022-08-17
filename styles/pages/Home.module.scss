@@ -1,0 +1,6 @@
+@import '../main.module.scss';
+
+.title {
+  @include text-10;
+  color: $color-purple;
+}

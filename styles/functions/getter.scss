@@ -17,8 +17,24 @@
   @return get-map-value($font-sizes, $key);
 }
 
-@function font-size-desktop($key) {
-  @return get-map-value($font-sizes-desktop, $key);
+@function font-size-2xl($key) {
+  @return get-map-value($font-sizes-2xl, $key);
+}
+
+@function font-size-xl($key) {
+  @return get-map-value($font-sizes-xl, $key);
+}
+
+@function font-size-lg($key) {
+  @return get-map-value($font-sizes-lg, $key);
+}
+
+@function font-size-md($key) {
+  @return get-map-value($font-sizes-md, $key);
+}
+
+@function font-size-sm($key) {
+  @return get-map-value($font-sizes-sm, $key);
 }
 
 @function font-weight($key) {

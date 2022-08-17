@@ -1,15 +1,215 @@
 @mixin text-7 {
   font-size: font-size(xxxs);
 
-  @include desktop {
-    font-size: font-size-desktop(xxxs);
+  @include screen-2xl {
+    font-size: font-size-2xl(xxxs);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xxxs);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(xxxs);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xxxs);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xxxs);
   }
 }
 
 @mixin text-10 {
   font-size: font-size(xxs);
 
-  @include desktop {
-    font-size: font-size-desktop(xxs);
+  @include screen-2xl {
+    font-size: font-size-2xl(xxs);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xxs);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(xxs);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xxs);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xxs);
+  }
+}
+
+@mixin text-12 {
+  font-size: font-size(xs);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(xs);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xs);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(xs);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xs);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xs);
+  }
+}
+
+@mixin text-16 {
+  font-size: font-size(s);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(s);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(s);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(s);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(s);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(s);
+  }
+}
+
+@mixin text-20 {
+  font-size: font-size(m);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(m);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(m);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(m);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(m);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(m);
+  }
+}
+
+@mixin text-25 {
+  font-size: font-size(l);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(l);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(l);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(l);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(l);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(l);
+  }
+}
+
+@mixin text-40 {
+  font-size: font-size(xl);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(xl);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xl);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(xl);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xl);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xl);
+  }
+}
+
+@mixin text-60 {
+  font-size: font-size(xxl);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(xxl);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xxl);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(sxxl);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xxl);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xxl);
+  }
+}
+
+@mixin text-90 {
+  font-size: font-size(xxxl);
+
+  @include screen-2xl {
+    font-size: font-size-2xl(xxxl);
+  }
+
+  @include screen-xl {
+    font-size: font-size-xl(xxxl);
+  }
+
+  @include screen-lg {
+    font-size: font-size-lg(sxxxl);
+  }
+
+  @include screen-md {
+    font-size: font-size-md(xxxl);
+  }
+
+  @include screen-sm {
+    font-size: font-size-sm(xxxl);
   }
 }

@@ -3,4 +3,8 @@
 .title {
   @include text-10;
   color: $color-purple;
+
+  @include abs-center-bottom(fixed);
+  bottom: 100px;
+  width: 50px;
 }

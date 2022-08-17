@@ -1,0 +1,124 @@
+// TRANSITIONS
+@mixin transition($duration: 250ms, $timing: ease-in-out) {
+  transition-timing-function: $timing;
+  transition-duration: $duration;
+}
+
+// POSITION HELPERS
+@mixin position-center-vertical {
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@mixin position-center-horizontal {
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// POSITION - ABSOLUTE / FIXED
+@mixin abs-center-vertical($type: absolute) {
+  @include position-center-vertical;
+
+  position: $type;
+}
+
+@mixin abs-center-horizontal($type: absolute) {
+  @include position-center-horizontal;
+
+  position: $type;
+}
+
+@mixin abs-left-top($type: absolute) {
+  position: $type;
+  top: 0;
+  left: 0;
+}
+@mixin abs-left-center($type: absolute) {
+  @include abs-center-vertical($type);
+
+  left: 0;
+}
+@mixin abs-left-bottom($type: absolute) {
+  position: $type;
+  bottom: 0;
+  left: 0;
+}
+@mixin abs-center-top($type: absolute) {
+  @include abs-center-horizontal($type);
+
+  top: 0;
+}
+@mixin abs-center-center($type: absolute) {
+  @include abs-center-horizontal;
+  @include position-center-vertical;
+
+  position: $type;
+}
+@mixin abs-center-bottom($type: absolute) {
+  @include abs-center-horizontal($type);
+
+  bottom: 0;
+}
+@mixin abs-right-top($type: absolute) {
+  position: $type;
+  top: 0;
+  right: 0;
+}
+@mixin abs-right-center($type: absolute) {
+  @include abs-center-vertical($type);
+
+  right: 0;
+}
+@mixin abs-right-bottom($type: absolute) {
+  position: $type;
+  right: 0;
+  bottom: 0;
+}
+
+//BG HELPER
+@mixin bg($bg-url) {
+  background: url($bg-url) no-repeat;
+  background-position: center;
+}
+
+// BACKGROUND COVER
+@mixin background-cover($bg-url) {
+  @include bg($bg-url);
+
+  background-size: cover;
+}
+
+@mixin background-contain {
+  @include bg($bg-url);
+
+  background-size: contain;
+}
+
+// IMAGE FIT
+@mixin image-fit-cover {
+  @include width-height-full;
+
+  object-fit: cover;
+}
+
+@mixin image-fit-contain {
+  @include width-height-full;
+
+  object-fit: contain;
+}
+
+// FULL WIDTH
+@mixin width-height-full {
+  width: 100%;
+  height: 100%;
+}
+
+// RECTNAGLE
+@mixin width-height-rect($size) {
+  width: $size;
+  height: $size;
+}

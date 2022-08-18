@@ -1,7 +1,7 @@
 import { IButton } from './Button';
 
 const base: IButton = {
-  sampleTextProp: 'Hello world!',
+  children: 'Hello world!',
 };
 
 export const mockButtonProps = {

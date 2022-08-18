@@ -1,4 +1,4 @@
-@function get-map-value($map, $keys...) {
+@function getMapValue($map, $keys...) {
   @each $key in $keys {
     $isValidKey: map-has-key($map, $key);
     $map: map-get($map, $key);
@@ -13,30 +13,30 @@
   @return $map;
 }
 
-@function font-size($key) {
-  @return get-map-value($font-sizes, $key);
+@function fontSize($key) {
+  @return getMapValue($fontSizes, $key);
 }
 
-@function font-size-2xl($key) {
-  @return get-map-value($font-sizes-2xl, $key);
+@function fontSize2xl($key) {
+  @return getMapValue($fontSizes2xl, $key);
 }
 
-@function font-size-xl($key) {
-  @return get-map-value($font-sizes-xl, $key);
+@function fontSizeXl($key) {
+  @return getMapValue($fontSizesXl, $key);
 }
 
-@function font-size-lg($key) {
-  @return get-map-value($font-sizes-lg, $key);
+@function fontSizeLg($key) {
+  @return getMapValue($fontSizesLg, $key);
 }
 
-@function font-size-md($key) {
-  @return get-map-value($font-sizes-md, $key);
+@function fontSizeMd($key) {
+  @return getMapValue($fontSizesMd, $key);
 }
 
-@function font-size-sm($key) {
-  @return get-map-value($font-sizes-sm, $key);
+@function fontSizeSm($key) {
+  @return getMapValue($fontSizesSm, $key);
 }
 
-@function font-weight($key) {
-  @return get-map-value($font-weights, $key);
+@function fontWeight($key) {
+  @return getMapValue($fontWeights, $key);
 }

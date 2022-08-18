@@ -5,14 +5,14 @@
 }
 
 // POSITION HELPERS
-@mixin position-center-vertical {
+@mixin positionCenterVertical {
   top: 0;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-@mixin position-center-horizontal {
+@mixin positionCenterHorizontal {
   right: 0;
   left: 0;
   margin-right: auto;
@@ -20,60 +20,60 @@
 }
 
 // POSITION - ABSOLUTE / FIXED
-@mixin abs-center-vertical($type: absolute) {
-  @include position-center-vertical;
+@mixin absCenterVertical($type: absolute) {
+  @include positionCenterVertical;
 
   position: $type;
 }
 
-@mixin abs-center-horizontal($type: absolute) {
-  @include position-center-horizontal;
+@mixin absCenterHorizontal($type: absolute) {
+  @include positionCenterHorizontal;
 
   position: $type;
 }
 
-@mixin abs-left-top($type: absolute) {
+@mixin absLeftTop($type: absolute) {
   position: $type;
   top: 0;
   left: 0;
 }
-@mixin abs-left-center($type: absolute) {
-  @include abs-center-vertical($type);
+@mixin absLeftCenter($type: absolute) {
+  @include absCenterVertical($type);
 
   left: 0;
 }
-@mixin abs-left-bottom($type: absolute) {
+@mixin absLeftBottom($type: absolute) {
   position: $type;
   bottom: 0;
   left: 0;
 }
-@mixin abs-center-top($type: absolute) {
-  @include abs-center-horizontal($type);
+@mixin absCenterTop($type: absolute) {
+  @include absCenterHorizontal($type);
 
   top: 0;
 }
-@mixin abs-center-center($type: absolute) {
-  @include abs-center-horizontal;
-  @include position-center-vertical;
+@mixin absCenterCenter($type: absolute) {
+  @include absCenterHorizontal;
+  @include positionCenterVertical;
 
   position: $type;
 }
-@mixin abs-center-bottom($type: absolute) {
-  @include abs-center-horizontal($type);
+@mixin absCenterBottom($type: absolute) {
+  @include absCenterHorizontal($type);
 
   bottom: 0;
 }
-@mixin abs-right-top($type: absolute) {
+@mixin absRightTop($type: absolute) {
   position: $type;
   top: 0;
   right: 0;
 }
-@mixin abs-right-center($type: absolute) {
-  @include abs-center-vertical($type);
+@mixin absRightCenter($type: absolute) {
+  @include absCenterVertical($type);
 
   right: 0;
 }
-@mixin abs-right-bottom($type: absolute) {
+@mixin absRightBottom($type: absolute) {
   position: $type;
   right: 0;
   bottom: 0;
@@ -86,39 +86,40 @@
 }
 
 // BACKGROUND COVER
-@mixin background-cover($bg-url) {
+@mixin backgroundCover($bg-url) {
   @include bg($bg-url);
 
   background-size: cover;
 }
 
-@mixin background-contain {
+@mixin backgroundContain {
   @include bg($bg-url);
 
   background-size: contain;
 }
 
-// IMAGE FIT
-@mixin image-fit-cover {
-  @include width-height-full;
-
-  object-fit: cover;
-}
-
-@mixin image-fit-contain {
-  @include width-height-full;
-
-  object-fit: contain;
-}
-
 // FULL WIDTH
-@mixin width-height-full {
+@mixin widthHeightFull {
   width: 100%;
   height: 100%;
 }
 
 // RECTNAGLE
-@mixin width-height-rect($size) {
+@mixin widthHeightRect($size) {
   width: $size;
   height: $size;
 }
+
+// IMAGE FIT
+@mixin imageFitCover {
+  @include widthHeightFull;
+
+  object-fit: cover;
+}
+
+@mixin imageFitContain {
+  @include widthHeightFull;
+
+  object-fit: contain;
+}
+

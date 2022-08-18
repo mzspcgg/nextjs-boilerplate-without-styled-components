@@ -3,11 +3,11 @@
 
 * {
   box-sizing: border-box;
-  font-family: $font-default;
-  font-size: $font-size-default;
-  font-weight: font-weight(medium);
-  color: $color-default;
-  line-height: $line-height-default;
+  font-family: $fontDefault;
+  font-size: $fontSizeDefault;
+  font-weight: fontWeight(medium);
+  color: $colorDefault;
+  line-height: $lineHeightDefault;
 }
 
 html,
@@ -17,5 +17,5 @@ body,
 }
 
 body {
-  background: $color-bg;
+  background: $colorBg;
 }

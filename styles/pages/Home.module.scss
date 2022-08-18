@@ -1,10 +1,10 @@
 @import '../main.module.scss';
 
 .title {
-  @include text-10;
-  color: $color-purple;
+  @include text10;
+  color: $colorPurple;
 
-  @include abs-center-bottom(fixed);
+  @include absCenterBottom(fixed);
   bottom: 100px;
   width: 50px;
 }

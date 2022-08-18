@@ -1,12 +1,12 @@
 // FONT DEFAULT SIZE
-$font-size-default: 16px;
+$fontSizeDefault: 16px;
 
 //FONT FAMILIES
-$font-default: 'Raleway, sans-serif';
-$font-secondary: 'Poppins, sans-serif';
+$fontDefault: 'Raleway, sans-serif';
+$fontSecondary: 'Poppins, sans-serif';
 
 // FONT SIZEs
-$font-sizes: (
+$fontSizes: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -18,7 +18,7 @@ $font-sizes: (
   xxxl: rem(90px),
 );
 
-$font-sizes-2xl: (
+$fontSizes2xl: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -30,7 +30,7 @@ $font-sizes-2xl: (
   xxxl: rem(90px),
 );
 
-$font-sizes-xl: (
+$fontSizesXl: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -42,7 +42,7 @@ $font-sizes-xl: (
   xxxl: rem(90px),
 );
 
-$font-sizes-lg: (
+$fontSizesLg: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -54,7 +54,7 @@ $font-sizes-lg: (
   xxxl: rem(90px),
 );
 
-$font-sizes-md: (
+$fontSizesMd: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -66,7 +66,7 @@ $font-sizes-md: (
   xxxl: rem(90px),
 );
 
-$font-sizes-sm: (
+$fontSizesSm: (
   xxxs: rem(7px),
   xxs: rem(10px),
   xs: rem(12px),
@@ -79,11 +79,11 @@ $font-sizes-sm: (
 );
 
 // FONT-WEIGHTS
-$font-weights: (
+$fontWeights: (
   light: 300,
   medium: 500,
   bold: 700,
 );
 
 // LINE HEIGHT
-$line-height-default: 1em;
+$lineHeightDefault: 1em;

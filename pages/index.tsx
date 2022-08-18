@@ -1,3 +1,4 @@
+import Button from '../components/buttons/button/Button';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import SidebarLayout from '../components/layouts/sidebar/SidebarLayout';
 import styles from '../styles/pages/Home.module.scss';
@@ -9,6 +10,7 @@ const Home: NextPageWithLayout = () => {
       <h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
+      <Button>Test</Button>
     </section>
   );
 };
